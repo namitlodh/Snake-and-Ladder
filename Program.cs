@@ -29,7 +29,7 @@ namespace Snake_and_Ladder
                     Console.WriteLine($"Its a Ladder, Move forward from {Position()} to {Position() + Diceroll()}");
                     break;
                 case 2:
-                    Console.WriteLine($"Its a Snake, Move forward from {Position()} to {Position() - Diceroll()}");
+                    Console.WriteLine($"Its a Snake, Move backward from {Position()} to {Position() - Diceroll()}");
                     break;
             }
             Console.ReadLine();
