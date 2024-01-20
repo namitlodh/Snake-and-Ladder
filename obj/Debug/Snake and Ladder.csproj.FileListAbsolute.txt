@@ -1,0 +1,7 @@
+C:\Users\dell\source\repos\Snake and Ladder\Snake and Ladder\bin\Debug\Snake and Ladder.exe.config
+C:\Users\dell\source\repos\Snake and Ladder\Snake and Ladder\bin\Debug\Snake and Ladder.exe
+C:\Users\dell\source\repos\Snake and Ladder\Snake and Ladder\bin\Debug\Snake and Ladder.pdb
+C:\Users\dell\source\repos\Snake and Ladder\Snake and Ladder\obj\Debug\Snake and Ladder.csproj.AssemblyReference.cache
+C:\Users\dell\source\repos\Snake and Ladder\Snake and Ladder\obj\Debug\Snake and Ladder.csproj.CoreCompileInputs.cache
+C:\Users\dell\source\repos\Snake and Ladder\Snake and Ladder\obj\Debug\Snake and Ladder.exe
+C:\Users\dell\source\repos\Snake and Ladder\Snake and Ladder\obj\Debug\Snake and Ladder.pdb
