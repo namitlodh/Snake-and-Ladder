@@ -11,7 +11,14 @@ namespace Snake_and_Ladder
         static void Main(string[] args)
         {
             int playerpositoon = 0;
+            int diceroll = Diceroll();
+            Console.WriteLine(diceroll);
             Console.ReadLine();
+        }
+        static int Diceroll()
+        {
+            Random rand = new Random();
+            return rand.Next(1, 7);
         }
     }
 }
