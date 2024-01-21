@@ -40,9 +40,13 @@ namespace Snake_and_Ladder
                 {
                     playposition = 0;
                 }
-                else if (playposition >= 100)
+                else if (playposition == 100)
                 {
                     Console.WriteLine("Player reached the winning position (100)!");
+                }
+                else if (playposition > 100)
+                {
+                    Console.WriteLine($"Player is in the same position {playposition-Diceroll()}!");
                 }
             }
         }
