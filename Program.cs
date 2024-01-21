@@ -10,39 +10,48 @@ namespace Snake_and_Ladder
     {
         static void Main(string[] args)
         {
-            int playerpositoon = 0;
-            int diceroll = Diceroll();
-
-            Play();
-            Console.ReadLine();
-        }
-        static void Play()
-        { 
-            Random rand = new Random();
-            int options= rand.Next(0,3);
-            switch(options)
+            int playposition = 0;
+            while (playposition < 100)
             {
-                case 0:
-                    Console.WriteLine("No move");
-                    break;
-                case 1:
-                    Console.WriteLine($"Its a Ladder, Move forward from {Position()} to {Position() + Diceroll()}");
-                    break;
-                case 2:
-                    Console.WriteLine($"Its a Snake, Move forward from {Position()} to {Position() - Diceroll()}");
-                    break;
+                Console.WriteLine($"Player is currently at position {playposition}. Press Enter to simulate a player's turn.");
+                Console.ReadLine();
+                Random rand = new Random();
+                int options = rand.Next(0, 3);
+                switch (options)
+                {
+                    case 0:
+                        Console.WriteLine("Its a Ladder, Move forward");
+                        playposition += Diceroll();
+                        Console.WriteLine($"Player moved from {playposition - Diceroll()} to {playposition}");
+                        break;
+                    case 1:
+                        Console.WriteLine("Its a Snake, Move backward");
+                        int previousPosition = playposition;
+                        playposition -= Diceroll();
+                        Console.WriteLine($"Player moved from {previousPosition} to {playposition}.");
+                        break;
+                    case 2:
+                        Console.WriteLine("No move");
+                        break;
+                }
+
+
+                if (playposition < 0)
+                {
+                    playposition = 0;
+                }
+                else if (playposition >= 100)
+                {
+                    Console.WriteLine("Player reached the winning position (100)!");
+                }
             }
-            Console.ReadLine();
         }
         static int Diceroll()
         {
             Random rand = new Random();
             return rand.Next(1, 7);
         }
-        static int Position()
-        {
-            Random rand = new Random();
-            return rand.Next(1, 101);
-        }
-    }
+    }  
 }
+
+ 
