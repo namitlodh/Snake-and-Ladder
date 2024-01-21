@@ -11,8 +11,10 @@ namespace Snake_and_Ladder
         static void Main(string[] args)
         {
             int playposition = 0;
+            int count = 0;
             while (playposition < 100)
             {
+                Console.WriteLine($"Dice count: {count++}");
                 Console.WriteLine($"Player is currently at position {playposition}. Press Enter to simulate a player's turn.");
                 Console.ReadLine();
                 Random rand = new Random();
